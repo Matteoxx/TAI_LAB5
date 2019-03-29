@@ -1,24 +1,24 @@
-var Complex = /** @class */ (function () {
-    function Complex(re, im) {
+"use strict";
+class Complex {
+    constructor(re, im) {
         this.re = re;
         this.im = im;
     }
-    Complex.prototype.add = function (obj) {
+    add(obj) {
         return new Complex(this.re + obj.re, this.im + obj.im);
-    };
-    Complex.prototype.subtract = function (obj) {
+    }
+    subtract(obj) {
         return new Complex(this.re - obj.re, this.im - obj.im);
-    };
-    Complex.prototype.abs = function () {
+    }
+    abs() {
         return Math.sqrt((this.re * this.re) + (this.im * this.im));
-    };
-    Complex.prototype.toString = function () {
+    }
+    toString() {
         return String(this.re) + " + " + String(this.im) + "i";
-    };
-    return Complex;
-}());
-var com1 = new Complex(3, 2);
-var com2 = new Complex(2, 3);
+    }
+}
+let com1 = new Complex(3, 2);
+let com2 = new Complex(2, 3);
 console.log(com1.add(com2));
 console.log(com1.subtract(com2));
 console.log(com1.abs());
