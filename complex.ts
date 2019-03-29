@@ -20,7 +20,7 @@ class Complex {
     }
 
     toString(){
-        return this.re  + " " + this.im;
+        return String(this.re)  + " + " + String(this.im) + "i";
     }
 
 }

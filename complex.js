@@ -13,7 +13,7 @@ var Complex = /** @class */ (function () {
         return Math.sqrt((this.re * this.re) + (this.im * this.im));
     };
     Complex.prototype.toString = function () {
-        return this.re + " " + this.im;
+        return String(this.re) + " + " + String(this.im) + "i";
     };
     return Complex;
 }());
