@@ -21,6 +21,7 @@ export class BlogComponent implements OnInit {
   getAll(){
     this.service.getAll().subscribe(response => {
       this.items$ = response;
+      console.log(this.items$)
     });
   }
 
